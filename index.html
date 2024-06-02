@@ -15,6 +15,105 @@
     <title>Movie Seat Booking</title>
   </head>
   <body>
-    <script scr="script.js"></script>
+    <div class="movie-container">
+      <label>Kies een film:</label>
+      <select id="movie">
+        <option value="" hidden disabled selected>Selecteer een film</option>
+        <option value="10" label="Ferris Bueller's Day Off">
+          Ferris Bueller's Day Off - €10
+        </option>
+        <option value="12" label="New Kids Turbo">New Kids Turbo - €12</option>
+        <option value="8" label="Pulp Fiction">Pulp Fiction - €8</option>
+        <option value="9" label="The Silence of the Lambs">
+          The Silence of the Lambs - €9
+        </option>
+      </select>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>Beschikbaar</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Geselecteerd</small>
+      </li>
+      <li>
+        <div class="seat occupied"></div>
+        <small>Bezet</small>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="screen"></div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+    <p class="text">
+      Je hebt
+      <span id="count" class="count">0</span> stoelen gereserveerd, voor een
+      totaal van <span id="total" class="total">0</span>
+    </p>
+
+    <script src="script.js"></script>
   </body>
 </html>
